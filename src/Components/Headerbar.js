@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Headerbar() {
   return (
@@ -14,15 +15,15 @@ function Headerbar() {
               <div className="social-links ">
                 <ul className="m-0 p-0">
                   <li className="d-inline">
-                    <a href="#">
+                    <Link href="#">
                       <i className="fa fa-facebook border-social rounded-circle text-center"></i>
-                    </a>
+                    </Link>
                   </li>
-                  <li className="d-inline">
+                  <Link className="d-inline">
                     <a href="#">
                       <i className="fa fa-twitter border-social rounded-circle text-center"></i>
                     </a>
-                  </li>
+                  </Link>
                   <li className="d-inline">
                     <a href="#">
                       <i className="fa fa-google border-social rounded-circle text-center"></i>
@@ -78,10 +79,10 @@ function Headerbar() {
               <div className="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                 <ul className="navbar-nav align-items-center" id="responsive-menu">
                   <li className="nav-item ">
-                    <a className="nav-link px-2 my-4 py-0 text-white" aria-current="page" href="index.html">Home</a>
+                    <Link className="nav-link px-2 my-4 py-0 text-white" aria-current="page" to="/">Home</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link px-2 my-4 py-0 text-white" href="about.html">About</a>
+                    <Link className="nav-link px-2 my-4 py-0 text-white" to="/about">About</Link>
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
@@ -89,10 +90,10 @@ function Headerbar() {
                       Speaker
                     </a>
                     <ul className="dropdown-menu bg-lightgrey p-0 rounded">
-                      <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
-                          href="speaker_list.html">Speakers List</a></li>
-                      <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
-                          href="speaker_detail.html">Speakers Details</a></li>
+                      <li><Link className="dropdown-item py-3 px-6 text-capitalize black border-0"
+                          to="/speaker-list">Speakers List</Link></li>
+                      <li><Link className="dropdown-item py-3 px-6 text-capitalize black border-0"
+                          to="/speaker-detail">Speakers Details</Link></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
@@ -101,10 +102,10 @@ function Headerbar() {
                       Schedule
                     </a>
                     <ul className="dropdown-menu bg-lightgrey p-0 rounded">
-                      <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
-                          href="event_list.html">Event List</a></li>
-                      <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
-                          href="event-detail.html">Event Details</a></li>
+                      <li><Link className="dropdown-item py-3 px-6 text-capitalize black border-0"
+                          to="/event-list">Event List</Link></li>
+                      <li><Link className="dropdown-item py-3 px-6 text-capitalize black border-0"
+                          to="/event-detail">Event Details</Link></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
@@ -113,8 +114,8 @@ function Headerbar() {
                       Pages
                     </a>
                     <ul className="dropdown-menu bg-lightgrey p-0 rounded">
-                      <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
-                          href="sponsers.html">Sponsors</a></li>
+                      <li><Link className="dropdown-item py-3 px-6 text-capitalize black border-0"
+                          to="/our-sponsor">Sponsors</Link></li>
                       <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
                           href="gallery.html">Gallery</a></li>
                       <li><a className="dropdown-item py-3 px-6 text-capitalize black border-0"
